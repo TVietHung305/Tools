@@ -1,18 +1,6 @@
 /*
 Đếm và trích xuất chuỗi ASCII
 Mô tả: Viết chương trình đọc một file nhị phân và trích xuất tất cả các chuỗi ASCII (chuỗi ký tự in được dài ít nhất 4 ký tự).
-Hướng dẫn:
-    Đọc file theo từng byte bằng fread.
-    Khi gặp ký tự in được (isprint), lưu vào buffer tạm.
-    Nếu chuỗi dài ≥ 4 ký tự và kết thúc bằng ký tự không in được, in chuỗi và offset.
-    Ví dụ đầu ra:
-        Offset 0x0004: "This program"
-        Offset 0x0020: "MZ"
-Mở rộng:
-    Hỗ trợ trích xuất chuỗi Unicode (UTF-16).
-    Lưu các chuỗi vào file text riêng để phân tích sau.
-Kỹ năng: File I/O, xử lý chuỗi, offset tracking.
-Ứng dụng: Trích xuất chuỗi từ mã độc để tìm IOCs (như URL, tên file).
 */
 #include<stdio.h>
 #include<stdlib.h>
