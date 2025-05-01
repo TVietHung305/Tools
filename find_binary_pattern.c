@@ -1,17 +1,6 @@
 /*
-Bài tập 2: Tìm kiếm pattern nhị phân
+Tìm kiếm pattern nhị phân
 Mô tả: Viết chương trình tìm kiếm một chuỗi byte cụ thể (pattern) trong file nhị phân và in offset của các lần xuất hiện.
-Hướng dẫn:
-    Nhận pattern từ người dùng (ví dụ: 4D 5A cho chữ ký MZ).
-    Đọc file theo từng khối và dùng thuật toán tìm kiếm chuỗi (như memmem hoặc tự viết).
-    In offset của mỗi lần xuất hiện.
-    Ví dụ đầu ra:
-        Pattern "4D 5A" found at offset: 0x0000
-Mở rộng:
-    Hỗ trợ tìm kiếm với wildcard (ví dụ: 4D ?? 90).
-    Tích hợp với YARA rules đơn giản (parse rule từ file text).
-Kỹ năng: File I/O, pattern matching, thuật toán tìm kiếm.
-Ứng dụng: Tìm chữ ký mã độc hoặc shellcode trong file.
 */
 #include<stdio.h>
 #include<stdlib.h>
